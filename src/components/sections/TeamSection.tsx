@@ -1,41 +1,47 @@
 import React from "react";
+import LelgoImg from "../../assets/images/lelgo.jpeg";
+import IanImg from "../../assets/images/ian.jpeg";
+import DalvinImg from "../../assets/images/dalvin.jpeg";
+import AlfredImg from "../../assets/images/alfred.jpeg";
+import SamImg from "../../assets/images/sam.jpeg";
+import FavianImg from "../../assets/images/favian.jpeg";
 
 const teamMembers = [
   {
     name: "Lelgo Isaac",
     role: "Project Lead",
     id: "SCT211-0074/2022",
-    image: "/placeholder-profile.jpg",
+    image: LelgoImg,
   },
   {
     name: "Ian Karanja",
     role: "AI/ML Developer",
     id: "SCT211-0461/2022",
-    image: "/placeholder-profile.jpg",
+    image: IanImg,
   },
   {
     name: "Dalvin Calvin",
     role: "Backend Developer",
     id: "SCT211-0452/2022",
-    image: "/placeholder-profile.jpg",
+    image: DalvinImg,
   },
   {
     name: "Alfred Kahenya",
     role: "Frontend Developer",
     id: "SCT211-0023/2021",
-    image: "/placeholder-profile.jpg",
+    image: AlfredImg,
   },
   {
     name: "Favian Imbera",
     role: "UI/UX Designer",
     id: "SCT211-0022/2021",
-    image: "/placeholder-profile.jpg",
+    image: FavianImg,
   },
   {
     name: "Samuel Ruoti",
     role: "Database Administrator",
     id: "SCT211-0542/2022",
-    image: "/placeholder-profile.jpg",
+    image: SamImg,
   },
 ];
 
@@ -61,9 +67,9 @@ const TeamSection: React.FC = () => {
             >
               <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto mb-4 overflow-hidden">
                 <img
-                  src="/api/placeholder/100/100"
+                  src={member.image}
                   alt={`${member.name} profile`}
-                  className="w-full h-full object-cover"
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-gray-500 text-xl font-semibold text-primary">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@mantine/core";
+import HeroImg from "../../assets/images/onboarding-2.png";
 
 const HeroSection: React.FC = () => {
   return (
@@ -36,7 +37,7 @@ const HeroSection: React.FC = () => {
               {/* Image container */}
               <div className="h-64 rounded flex items-center justify-center overflow-hidden bg-gray-200">
                 <img
-                  src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=800&q=80"
+                  src={HeroImg}
                   alt="App Mockup"
                   className="h-full w-full object-cover"
                 />
