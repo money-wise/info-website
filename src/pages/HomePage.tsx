@@ -4,6 +4,10 @@ import Footer from '../components/layout/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import FeaturesSection from '../components/sections/FeaturesSection';
 import HowItWorksSection from '../components/sections/HowItWorksSection';
+import BudgetSection from '../components/sections/BudgetSection';
+import AnalyticsSection from '../components/sections/AnalyticsSection';
+import TechStackSection from '../components/sections/TechStackSection';
+import FutureImprovementsSection from '../components/sections/FutureImprovementsSection';
 
 const HomePage: React.FC = () => {
   return (
@@ -13,7 +17,10 @@ const HomePage: React.FC = () => {
         <HeroSection />
         <FeaturesSection />
         <HowItWorksSection />
-        {/* Add additional sections here */}
+        <BudgetSection />
+        <AnalyticsSection />
+        <TechStackSection />
+        <FutureImprovementsSection />
       </main>
       <Footer />
     </>
