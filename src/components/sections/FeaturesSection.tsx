@@ -16,7 +16,7 @@ const FeaturesSection: React.FC = () => {
     },
     {
       title: 'Spending Alerts',
-      description: 'Receive notifications when you're approaching your budget limits to avoid overspending.',
+      description: 'Receive notifications when you are approaching your budget limits to avoid overspending.',
       icon: <FaBell size={30} />,
     },
     {
