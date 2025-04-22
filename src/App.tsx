@@ -5,13 +5,13 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* Add more routes as needed */}
-      </Routes>
-    </Router>
-  )
+    // <Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      {/* Add more routes as needed */}
+    </Routes>
+    // </Router>
+  );
 }
 
 export default App
