@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
             <img
               src={AppScreen}
               alt="MoneyWise App"
-              className="rounded-lg shadow-2xl max-w-full w-xl h-xl mx-auto md:max-w-none"
+              className="rounded-lg shadow-2xl max-w-full w-xl h-xl mx-auto md:max-w-sm "
             />
           </div>
         </div>
