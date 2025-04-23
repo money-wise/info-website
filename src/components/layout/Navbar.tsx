@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Logo from "../../assets/images/logo.png";
 
 const Navbar: React.FC = () => {
   const scrollToSection = (elementId: string) => {
@@ -15,15 +15,12 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <img className="h-8 w-auto" src="/logo.png" alt="MoneyWise" />
+              <img className="h-8 w-auto" src={Logo} alt="MoneyWise" />
               <span className="ml-2 text-xl font-bold text-purple-600">
                 MoneyWise
               </span>
             </div>
             <nav className="hidden md:ml-6 md:flex md:space-x-8">
-              {/* <Link to="/" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900">Home</Link>
-              <Link to="/features" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">Features</Link>
-              <Link to="/how-it-works" className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-900">How It Works</Link> */}
               <a
                 onClick={() => scrollToSection("home")}
                 className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 cursor-pointer"
