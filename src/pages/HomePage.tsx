@@ -1,22 +1,29 @@
-import React from "react";
-import Layout from "../components/layout/Layout";
-import HeroSection from "../components/sections/HeroSection";
-import FeaturesSection from "../components/sections/FeaturesSection";
-import TeamSection from "../components/sections/TeamSection";
-import MethodologySection from "../components/sections/MethodologySection";
-import TechnologySection from "../components/sections/TechnologySection";
-import CTASection from "../components/sections/CTASection";
+import React from 'react';
+import Navbar from '../components/layout/Navbar';
+import Footer from '../components/layout/Footer';
+import HeroSection from '../components/sections/HeroSection';
+import FeaturesSection from '../components/sections/FeaturesSection';
+import HowItWorksSection from '../components/sections/HowItWorksSection';
+import BudgetSection from '../components/sections/BudgetSection';
+import AnalyticsSection from '../components/sections/AnalyticsSection';
+import TechStackSection from '../components/sections/TechStackSection';
+import FutureImprovementsSection from '../components/sections/FutureImprovementsSection';
 
 const HomePage: React.FC = () => {
   return (
-    <Layout>
-      <HeroSection />
-      <FeaturesSection />
-      <TechnologySection />
-      <MethodologySection />
-      <TeamSection />
-      <CTASection />
-    </Layout>
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <HowItWorksSection />
+        <BudgetSection />
+        <AnalyticsSection />
+        <TechStackSection />
+        <FutureImprovementsSection />
+      </main>
+      <Footer />
+    </>
   );
 };
 
